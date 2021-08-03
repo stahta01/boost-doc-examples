@@ -8,6 +8,11 @@
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 //[intro
+#ifdef _WIN32
+#define BOOST_USE_WINDOWS_H
+#include <winsock2.h>
+#include <windows.h>
+#endif
 #include <boost/process.hpp>
 
 #include <string>
